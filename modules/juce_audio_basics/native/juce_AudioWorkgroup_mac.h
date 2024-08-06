@@ -34,11 +34,11 @@
 
 namespace juce
 {
-#if (defined (MAC_OS_VERSION_11_0) || defined (__IPHONE_14_0))
- #define JUCE_AUDIOWORKGROUP_TYPES_AVAILABLE    1
-#else
+// #if (defined (MAC_OS_VERSION_11_0) || defined (__IPHONE_14_0))
+//  #define JUCE_AUDIOWORKGROUP_TYPES_AVAILABLE    1
+// #else
  #define JUCE_AUDIOWORKGROUP_TYPES_AVAILABLE    0
-#endif
+// #endif
 
 #if JUCE_AUDIOWORKGROUP_TYPES_AVAILABLE
  AudioWorkgroup makeRealAudioWorkgroup (os_workgroup_t handle);
